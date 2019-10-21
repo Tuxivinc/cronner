@@ -1,0 +1,11 @@
+/cron/logs/*.log {
+    daily
+    missingok
+    rotate 10
+    compress
+    delaycompress
+    notifempty
+    create 600 root root
+    size 1M
+    dateformat -%Y%m%d-%s
+}
